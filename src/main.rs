@@ -1,6 +1,7 @@
 pub mod types;
 pub mod cfg;
 pub mod lvn;
+pub mod dataflow;
 use types::*;
 use cfg::*;
 use lvn::*;
@@ -53,10 +54,11 @@ fn main() {
     };
 
     let blocks = build_blocks(&f);
-    let cFG = create_cfg(&blocks);
+    //let cFG = create_cfg(&blocks);
 
-    println!("CFG IS {:?}", cFG);
+    //println!("CFG IS {:?}", cFG);
 
 
     
 }
+

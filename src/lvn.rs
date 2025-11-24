@@ -184,7 +184,7 @@ fn get_canonical(var: &String, var2num: &HashMap<String, usize>, canon_var: &Has
 }
 
 // helper 
-fn get_dest(instr: &Instruction) -> Option<&String> {
+pub fn get_dest(instr: &Instruction) -> Option<&String> {
     match instr {
         Instruction::Id { dest, src } => Some(dest),
         Instruction::Const { dest, .. } => Some(dest),
