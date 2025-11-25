@@ -2,6 +2,8 @@ pub mod types;
 pub mod cfg;
 pub mod lvn;
 pub mod dataflow;
+pub mod global;
+
 use types::*;
 use cfg::*;
 use lvn::*;
